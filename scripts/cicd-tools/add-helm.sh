@@ -11,4 +11,4 @@ wget -c  https://get.helm.sh/helm-v2.16.9-linux-amd64.tar.gz
 tar zxf helm-v2.16.9-linux-amd64.tar.gz
 mv linux*/helm linux*/tiller /usr/local/bin
 #helm init --upgrade -i registry.cn-hangzhou.aliyuncs.com/google_containers/tiller:v2.16.9 --stable-repo-url https://kubernetes.oss-cn-hangzhou.aliyuncs.com/charts
-helm init --upgrade -i ghcr.io/helm/tiller:v2.16.9 --stable-repo-url https://kubernetes.oss-cn-hangzhou.aliyuncs.com/charts 
+helm init --upgrade -i ghcr.io/helm/tiller:v2.16.9 --stable-repo-url https://charts.helm.sh/stable --service-account tiller
